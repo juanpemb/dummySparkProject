@@ -7,11 +7,13 @@ import org.json.JSONException;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.skyscreamer.jsonassert.JSONAssert;
 
 import spark.Spark;
 
+@Ignore
 public class HomeAssistantTest {
 
 	private static final String HOME_ASSISTANT_PATH = "/home-assistant";
@@ -40,6 +42,7 @@ public class HomeAssistantTest {
 	
 	
 	@Test
+	@Ignore
 	public void saveHomeAssistant(){
 		TestResponse res = TestResponse.request("POST", HOME_ASSISTANT_PATH);
 		

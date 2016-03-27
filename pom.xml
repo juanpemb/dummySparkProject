@@ -80,6 +80,19 @@
 		</dependency>
 
 		<dependency>
+			<groupId>com.zaxxer</groupId>
+			<artifactId>HikariCP</artifactId>
+			<version>2.4.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.37</version>
+		</dependency>
+
+		<!-- test -->
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.12</version>
@@ -117,7 +130,6 @@
 					<target>${jdk.version}</target>
 				</configuration>
 			</plugin>
-
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
@@ -133,6 +145,23 @@
 					<mainClass>org.jp.spark.App</mainClass>
 					<arguments>
 					</arguments>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>com.heroku.sdk</groupId>
+				<artifactId>heroku-maven-plugin</artifactId>
+				<version>0.4.4</version>
+				<configuration>
+					<jdkVersion>1.8</jdkVersion>
+					<!-- Use your own application name -->
+					<appName>secure-forest-1663</appName>
+					<processTypes>
+						<!-- Tell Heroku how to launch your application -->
+						<!-- You might have to remove the ./ in front -->
+						<web>java -jar target/dummySparkProject-0.0.1-SNAPSHOT.jar</web>
+					</processTypes>
+					<mainClass>org.jp.spark.App</mainClass>
 				</configuration>
 			</plugin>
 		</plugins>
