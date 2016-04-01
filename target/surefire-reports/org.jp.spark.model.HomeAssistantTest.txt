@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.jp.spark.model.HomeAssistantTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.027 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 3.153 sec

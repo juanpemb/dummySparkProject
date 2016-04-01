@@ -159,9 +159,8 @@
 					<processTypes>
 						<!-- Tell Heroku how to launch your application -->
 						<!-- You might have to remove the ./ in front -->
-						<web>java -jar target/dummySparkProject-0.0.1-SNAPSHOT.jar</web>
+						<web>java -cp target/dependency/*:target/classes/*:target/dummySparkProject-0.0.1-SNAPSHOT.jar org.jp.spark.App</web>
 					</processTypes>
-					<mainClass>org.jp.spark.App</mainClass>
 				</configuration>
 			</plugin>
 		</plugins>
