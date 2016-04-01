@@ -1,19 +1,16 @@
 package org.jp.spark.model;
 
-import static org.junit.Assert.assertEquals;
-
 import org.jp.spark.App;
 import org.json.JSONException;
-import org.junit.AfterClass;
-import org.junit.Assert;
-import org.junit.BeforeClass;
-import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.*;
+import org.junit.runner.RunWith;
+import org.mockito.runners.MockitoJUnitRunner;
 import org.skyscreamer.jsonassert.JSONAssert;
-
 import spark.Spark;
 
-@Ignore
+import static org.junit.Assert.assertEquals;
+
+@RunWith(MockitoJUnitRunner.class)
 public class HomeAssistantTest {
 
 	private static final String HOME_ASSISTANT_PATH = "/home-assistant";
@@ -51,7 +48,7 @@ public class HomeAssistantTest {
 
 	private static void waitStartServer() {
 		try {
-			Thread.sleep(1500);
+			Thread.sleep(700);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

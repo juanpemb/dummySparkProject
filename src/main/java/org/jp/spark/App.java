@@ -10,8 +10,10 @@ import org.jp.spark.service.HomeAssistantService;
 @Configuration
 @ComponentScan({ "org.jp.spark" })
 public class App {
+	private static AnnotationConfigApplicationContext ctx;
+
 	public static void main(String[] args) {
-		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(App.class);
+		ctx = new AnnotationConfigApplicationContext(App.class);
     	
 		new WebConfig(ctx.getBean(DummyService.class),ctx.getBean(HomeAssistantService.class));
 		
