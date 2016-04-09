@@ -13,8 +13,21 @@
          <p>Id: {{ data.name }} Nombre: {{ data.lastName }} mail: {{ data.mail }} telefono: {{data.phone}} valoracion: {{data.valoracion}} cp: {{data.cp}}</p>
       </li>
    </ul>
-
+   <ul>
+      <li>
+         Name: <input type="text" name="name" ng-model="name" required />
+      </li>
+      <li>
+         cp: <input type="text" name="cp" ng-model="cp" required />
+      </li>
+      <li>
+         <hr />
+         {{ PostDataResponse }}
+      </li>
+   </ul>
+   <button ng-click="SendData()">Submit</button>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script type="text/javascript" src ="js/angular.js"></script>
 <script type="text/javascript" src="js/angular_resource.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
