@@ -3,7 +3,7 @@ var app = angular.module("app", ["ngResource"]);
 
 //con dataResource inyectamos la factoría
 app.controller("appController", function ($scope, $http, dataResource) {
-    $http.get('http://localhost:4567/home-assistant').success(function (data) {
+    $http.get('/home-assistant').success(function (data) {
         $scope.datos = data;
     });
 })
