@@ -8,21 +8,20 @@ app.controller("appController", function ($scope, $http, dataResource) {
     });
 
     $scope.SendData = function () {
-               // use $.param jQuery function to serialize data from JSON
-                var data = {
+               var data = {
                     name: $scope.name,
                     cp: $scope.cp
-                }
-
-                var config = {
+               };
+               var config = {
                     headers : {
                         'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
                     }
-                }
+                };
 
                 $http.post('/home-assistant', data, config)
                 .success(function (data, status, headers, config) {
                     $scope.PostDataResponse = data;
+                    $scope.datos.push(data);
                 })
                 .error(function (data, status, header, config) {
                     $scope.ResponseDetails = "Data: " + data +
