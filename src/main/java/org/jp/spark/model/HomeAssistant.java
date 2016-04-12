@@ -23,52 +23,27 @@ public class HomeAssistant {
 		this.cp = cp;
 	}
 
-	public String getName() {
-		return name;
-	}
+	public String getName() { return name; }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+	public void setName(String name) { this.name = name; }
 
-	public String getLastName() {
-		return lastName;
-	}
+	public String getLastName() { return lastName; }
 
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
+	public void setLastName(String lastName) { this.lastName = lastName; }
 
-	public String getMail() {
-		return mail;
-	}
+	public String getMail() { return mail; }
 
-	public void setMail(String mail) {
-		this.mail = mail;
-	}
+	public void setMail(String mail) { this.mail = mail; }
 
-	public String getPhone() {
-		return phone;
-	}
+	public String getPhone() { return phone; }
 
-	public void setPhone(String phone) {
-		this.phone = phone;
-	}
+	public void setPhone(String phone) { this.phone = phone; }
 
-	public String getValoracion() {
-		return valoracion;
-	}
+	public String getValoracion() { return valoracion; }
 
-	public void setValoracion(String valoracion) {
-		this.valoracion = valoracion;
-	}
+	public void setValoracion(String valoracion) { this.valoracion = valoracion; }
 
-	public String getCp() {
-		return cp;
-	}
+	public String getCp() { return cp; }
 
-	public void setCp(String cp) {
-		this.cp = cp;
-	}
-
+	public void setCp(String cp) { this.cp = cp; }
 }
