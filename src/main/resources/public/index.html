@@ -6,16 +6,13 @@
 <html lang="en" ng-app="app">
 
 <head>
-
-    <meta charset="utf-8">
+	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>BASICA! A Free Bootstrap3 HTML5 CSS3 Template by Vactual Art</title>
-
-    <!-- Bootstrap Core CSS -->
+	<title>BASICA! A Free Bootstrap3 HTML5 CSS3 Template by Vactual Art</title>
+	<!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom CSS -->
@@ -48,30 +45,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Basica"></a>
+                <!-- put here the logo
+				<a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Basica"></a> -->
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about-us.html">Quienes somos</a></li>
+                    <li><a href="services.html">Servicios</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <i class="icon-angle-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Dropdown Menu 1</a></li>
-                            <li><a href="#">Dropdown Menu 2</a></li>
-                            <li><a href="#">Dropdown Menu 3</a></li>
-                            <li><a href="#">Dropdown Menu 4</a></li>
-                            <li><a href="#">Dropdown Menu 5</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms of Use</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="blog.html">Blog</a></li> 
-                    <li><a href="contact-us.html">Contact</a></li>
-                </ul>
+					<li><a href="contact-us.html">Contacto</a></li>
+				</ul>
             </div>
         </div>
     </header><!--/header-->
@@ -334,25 +318,7 @@
 		    </div>
 	    </div>
 
-
-
-		<!--añadimos aquí el controlador appController ya que será donde mostremos los datos-->
-		<div class="row" ng-controller="appController">
-			<h1 class="subheader">Consumir un json con $http en AngularJS</h1>
-			<ul class="panel callout radius">
-				<li ng-repeat="data in datos">
-					<p>Id: {{ data.name }} Nombre: {{ data.lastName }} mail: {{ data.mail }} telefono: {{data.phone}} valoracion: {{data.valoracion}} cp: {{data.cp}}</p>
-				</li>
-			</ul>
-
-		</div>
-		<script type="text/javascript" src="js/angular.js"></script>
-		<script type="text/javascript" src="js/angular_resource.js"></script>
-		<script type="text/javascript" src="js/app.js"></script>
-
-
-
-        <!-- Javascripts -->
+		<!-- Javascripts -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/bootstrap.min.js"></script>
